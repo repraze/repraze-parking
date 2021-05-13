@@ -1,0 +1,71 @@
+body {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h3,
+p {
+  margin: 1em 0;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+a:hover {
+  color: #3b63cf;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/repraze-pattern.png");
+  background-repeat: repeat;
+  background-color: #f8f8f8;
+
+  background-size: 42px;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0 42px;
+  }
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 2em;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+}
+
+.footer a {
+  white-space: nowrap;
+}
+
+.logo {
+  width: 100%;
+}
